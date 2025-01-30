@@ -1,3 +1,12 @@
 .o_main_navbar {
     border-bottom: none !important;
 }
+
+/* Target all direct and nested children of the navbar */
+.o_main_navbar * {
+    color: $o-main-text-color !important; /* Applies to all text elements */
+}
+
+.o_main_navbar *:hover {
+    color: $o-main-color-muted !important; 
+}
