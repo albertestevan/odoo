@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-19 13:06+0000\n"
+"POT-Creation-Date: 2025-01-27 14:23+0000\n"
 "PO-Revision-Date: 2024-09-25 09:41+0000\n"
 "Last-Translator: Ilya Rozhkov, 2025\n"
 "Language-Team: Russian (https://app.transifex.com/odoo/teams/41243/ru/)\n"
@@ -4960,6 +4960,13 @@ msgstr ""
 "Включите мастер НДС при проводке журнальной записи налоговой декларации\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_pos_urban_piper_enhancements
+msgid ""
+"\n"
+"Enhancements for the Point of Sale UrbanPiper module. Includes features such as store timing configuration, scheduled order handling, and improved toggle options.\n"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_website_appointment_crm
 msgid ""
 "\n"
@@ -5895,6 +5902,22 @@ msgstr ""
 "* Поддержка Fulfilment by Amazon (FBA) и Fulfilment by Merchant (FBM):\n"
 "    * FBA: Расположение склада и перемещение склада позволяют отслеживать ваши запасы в центрах Amazon Fulfilment Centers.\n"
 "    * FBM: Уведомления о доставке отправляются в Amazon для каждого подтвержденного комплектования (с возможностью частичной доставки).\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_sale_shopee
+msgid ""
+"\n"
+"Import your Shopee orders in Odoo and synchronize deliveries\n"
+"============================================================\n"
+"\n"
+"Key Features\n"
+"------------\n"
+"* Import orders from multiple accounts and shops\n"
+"* Orders are matched with Odoo products based on their internal reference (item_id or model_id in Shopee)\n"
+"* Support for both Fulfillment by Shopee (FBS), Fulfillment by Merchant (FBM) and Fulfilled by Cross Border Seller (Hybrid):\n"
+"* FBS: Importing the completed orders\n"
+"* FBM/Hybrid: Delivery information is fetched from Shopee, track and synchronize the stock level to Shopee\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_account_debit_note
@@ -8093,6 +8116,22 @@ msgstr ""
 "Ремонт продуктов по заявкам службы технической поддержки\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_it_riba
+msgid ""
+"\n"
+"Ri.Ba. Export for Batch Payment\n"
+"================================\n"
+"\n"
+"This module enables the generation of Ri.Ba. (Ricevute Bancarie) files from batch payments in Odoo.  \n"
+"It facilitates compliance with the Italian banking standard for managing receivables.\n"
+"\n"
+"- Group multiple receivables into a single batch for streamlined management and reconciliation.\n"
+"- Export batch payments as RIBA-compliant files to be submitted to your homebanking for processing.\n"
+"\n"
+"For more information about RIBA standards, refer to the guidelines issued by the Italian Bankers Association (CBI).\n"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_rw
 msgid ""
 "\n"
@@ -8764,6 +8803,7 @@ msgstr ""
 "гид.\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_ec_edi_stock
 #: model:ir.module.module,description:base.module_l10n_pe_edi_stock
 msgid ""
 "\n"
@@ -10554,6 +10594,7 @@ msgstr ""
 "Он тестирует все поддерживаемые QR-коды: SEPA, швейцарский QR и EMV QR (с использованием реализаций hk и br).\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_pos_restaurant_loyalty
 #: model:ir.module.module,description:base.module_pos_sale_loyalty
 msgid ""
 "\n"
@@ -11096,6 +11137,14 @@ msgstr ""
 "\n"
 "План счетов соответствует стандарту SYSCOHADA.\n"
 "\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_my_edi_extended
+msgid ""
+"\n"
+"This module improves the MyInvois E-invoicing feature by adding proper support for self billing, rendering the MyInvois\n"
+"QR code in the invoice PDF file and allows better management of foreign customer TIN.\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_base_iban
@@ -12258,6 +12307,7 @@ msgstr "%s (выделенный сервер исходящей почты):"
 
 #. module: base
 #. odoo-python
+#: code:addons/base/models/ir_actions.py:0
 #: code:addons/base/models/ir_filters.py:0
 #: code:addons/base/models/res_lang.py:0
 #: code:addons/base/models/res_partner.py:0
@@ -14237,6 +14287,11 @@ msgstr "Добавить UTM информация для массовой рас
 #: model:ir.module.module,summary:base.module_mass_mailing_crm_sms
 msgid "Add lead / opportunities info on mass mailing sms"
 msgstr "Добавьте информацию о свинце / возможностях в массовую рассылку смс"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_mx_hr_payroll_localisation
+msgid "Add models and fields for complete mexican localisation"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_social_sale
@@ -16985,7 +17040,7 @@ msgstr "Азия/Улан-Батор"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__asia/ulan_bator
 msgid "Asia/Ulan_Bator"
-msgstr ""
+msgstr "Азия/Улан-Батор"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__asia/urumqi
@@ -17103,12 +17158,12 @@ msgstr "Атлантика/Канары"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__atlantic/cape_verde
 msgid "Atlantic/Cape_Verde"
-msgstr ""
+msgstr "Атлантика/Кабо-Верде"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__atlantic/faeroe
 msgid "Atlantic/Faeroe"
-msgstr ""
+msgstr "Атлантика/Фарерские_острова"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__atlantic/faroe
@@ -17118,7 +17173,7 @@ msgstr "Атлантика/Фареры"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__atlantic/jan_mayen
 msgid "Atlantic/Jan_Mayen"
-msgstr ""
+msgstr "Атлантика/Ян-Майен"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__atlantic/madeira
@@ -17133,12 +17188,12 @@ msgstr "Атлантика/Рейкьявик"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__atlantic/south_georgia
 msgid "Atlantic/South_Georgia"
-msgstr ""
+msgstr "Атлантика/Южная_Георгия"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__atlantic/st_helena
 msgid "Atlantic/St_Helena"
-msgstr ""
+msgstr "Атлантика/Остров_Святой_Елены"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__atlantic/stanley
@@ -17246,7 +17301,7 @@ msgstr "Австралия - Расчет заработной платы с б�
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__australia/act
 msgid "Australia/ACT"
-msgstr ""
+msgstr "Австралия/АСТ"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__australia/adelaide
@@ -17261,12 +17316,12 @@ msgstr "Австралия/Брисбен"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__australia/broken_hill
 msgid "Australia/Broken_Hill"
-msgstr ""
+msgstr "Австралия/Брокен-Хилл"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__australia/canberra
 msgid "Australia/Canberra"
-msgstr ""
+msgstr "Австралия/Канберра"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__australia/currie
@@ -17291,7 +17346,7 @@ msgstr "Австралия/Хобарт"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__australia/lhi
 msgid "Australia/LHI"
-msgstr ""
+msgstr "Австралия/Лорд-Хау"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__australia/lindeman
@@ -17301,7 +17356,7 @@ msgstr "Австралия/Линдэман"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__australia/lord_howe
 msgid "Australia/Lord_Howe"
-msgstr ""
+msgstr "Австралия/Лорд-Хау"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__australia/melbourne
@@ -17311,12 +17366,12 @@ msgstr "Австралия/Мельбурн"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__australia/nsw
 msgid "Australia/NSW"
-msgstr ""
+msgstr "Австралия/NSW"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__australia/north
 msgid "Australia/North"
-msgstr ""
+msgstr "Австралия/Северная_территория"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__australia/perth
@@ -17326,12 +17381,12 @@ msgstr "Австралия/Перт"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__australia/queensland
 msgid "Australia/Queensland"
-msgstr ""
+msgstr "Австралия/Квинсленд"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__australia/south
 msgid "Australia/South"
-msgstr ""
+msgstr "Австралия/Юг"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__australia/sydney
@@ -17341,22 +17396,22 @@ msgstr "Австралия/Сидней"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__australia/tasmania
 msgid "Australia/Tasmania"
-msgstr ""
+msgstr "Австралия/Тасмания"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__australia/victoria
 msgid "Australia/Victoria"
-msgstr ""
+msgstr "Австралия/Виктория"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__australia/west
 msgid "Australia/West"
-msgstr ""
+msgstr "Австралия/Запад"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__australia/yancowinna
 msgid "Australia/Yancowinna"
-msgstr ""
+msgstr "Австралия/Янкоуинна"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_au_reports
@@ -17677,14 +17732,14 @@ msgid "Bahamas"
 msgstr "Багамские острова"
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_bh
-msgid "Bahrain - Accounting"
-msgstr "Бахрейн — Бухгалтерия"
-
-#. module: base
 #: model:res.country,name:base.bh
 msgid "Bahrain"
 msgstr "Бахрейн"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_bh
+msgid "Bahrain - Accounting"
+msgstr "Бахрейн — Бухгалтерия"
 
 #. module: base
 #: model:res.currency,currency_unit_label:base.THB
@@ -18027,6 +18082,11 @@ msgid "Belgian Intrastat Declaration"
 msgstr "Бельгийская Интрастатская декларация"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_be_pos_restaurant
+msgid "Belgian POS Restaurant Localization"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_attendance
 msgid "Belgian Payroll - Attendance"
 msgstr "Бельгийская платежная ведомость - Посещаемость"
@@ -18342,22 +18402,22 @@ msgstr "Бразилия - Продажа веб-сайтов"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__brazil/acre
 msgid "Brazil/Acre"
-msgstr ""
+msgstr "Бразилия/Акри"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__brazil/denoronha
 msgid "Brazil/DeNoronha"
-msgstr ""
+msgstr "Бразилия/Фернанду-ди-Норонья"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__brazil/east
 msgid "Brazil/East"
-msgstr ""
+msgstr "Бразилия/Восток"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__brazil/west
 msgid "Brazil/West"
-msgstr ""
+msgstr "Бразилия/Запад"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_br
@@ -18492,7 +18552,7 @@ msgstr "Модуль-мост между испанской локализаци
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_holidays_contract
 msgid "Bridge module between time off and contract"
-msgstr ""
+msgstr "Модуль-мост между отпусками и контрактами"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_event_booth_sale_exhibitor
@@ -18843,42 +18903,42 @@ msgstr "Канада — Бухгалтерские отчеты"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__canada/atlantic
 msgid "Canada/Atlantic"
-msgstr ""
+msgstr "Канада/Атлантика"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__canada/central
 msgid "Canada/Central"
-msgstr ""
+msgstr "Канада/Центральное"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__canada/eastern
 msgid "Canada/Eastern"
-msgstr ""
+msgstr "Канада/Восток"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__canada/mountain
 msgid "Canada/Mountain"
-msgstr ""
+msgstr "Канада/Горное"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__canada/newfoundland
 msgid "Canada/Newfoundland"
-msgstr ""
+msgstr "Канада/Ньюфаундленд"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__canada/pacific
 msgid "Canada/Pacific"
-msgstr ""
+msgstr "Канада/Тихоокеанское"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__canada/saskatchewan
 msgid "Canada/Saskatchewan"
-msgstr ""
+msgstr "Канада/Саскачеван"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__canada/yukon
 msgid "Canada/Yukon"
-msgstr ""
+msgstr "Канада/Юкон"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ca_check_printing
@@ -18926,7 +18986,7 @@ msgstr "Отменить обновление"
 #. odoo-python
 #: code:addons/base/models/res_users.py:0
 msgid "Cannot aggregate on %s parameter"
-msgstr ""
+msgstr "Невозможно агрегировать по параметру %s"
 
 #. module: base
 #. odoo-python
@@ -18964,7 +19024,7 @@ msgstr "Невозможно продублировать конфигураци
 #. odoo-python
 #: code:addons/base/models/res_users.py:0
 msgid "Cannot groupby on %s parameter"
-msgstr ""
+msgstr "Невозможно группировать по параметру %s"
 
 #. module: base
 #. odoo-python
@@ -19387,12 +19447,12 @@ msgstr ""
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__chile/continental
 msgid "Chile/Continental"
-msgstr ""
+msgstr "Чили/Континентальная"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__chile/easterisland
 msgid "Chile/EasterIsland"
-msgstr ""
+msgstr "Чили/Остров_Пасхи"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_cl_edi_website_sale
@@ -22524,6 +22584,11 @@ msgid "Ecuadorian Accounting Reports"
 msgstr "Бухгалтерские отчеты Эквадора"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ec_edi_stock
+msgid "Ecuadorian Delivery Guide"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ec_edi_pos
 msgid "Ecuadorian Point of Sale"
 msgstr "Эквадор —  Торговая точка"
@@ -22572,7 +22637,7 @@ msgstr "Интеграция счетов-фактур с налоговой с�
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__eire
 msgid "Eire"
-msgstr ""
+msgstr "Ирландия"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_partner__partner_share
@@ -22772,7 +22837,7 @@ msgstr "Сотрудники, получившие назначение"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_employment_hero
 msgid "Employment Hero Payroll"
-msgstr ""
+msgstr "Зарплатный модуль Employment Hero"
 
 #. module: base
 #. odoo-python
@@ -23282,7 +23347,7 @@ msgstr "Европа/Афины"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__europe/belfast
 msgid "Europe/Belfast"
-msgstr ""
+msgstr "Европа/Белфаст"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__europe/belgrade
@@ -23302,7 +23367,7 @@ msgstr "Европа/Братислава"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__europe/brussels
 msgid "Europe/Brussels"
-msgstr ""
+msgstr "Европа/Брюссель"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__europe/bucharest
@@ -23352,7 +23417,7 @@ msgstr "Европа/Хельсинки"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__europe/isle_of_man
 msgid "Europe/Isle_of_Man"
-msgstr ""
+msgstr "Европа/Остров_Мэн"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__europe/istanbul
@@ -23397,7 +23462,7 @@ msgstr "Европа/Любляна"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__europe/london
 msgid "Europe/London"
-msgstr ""
+msgstr "Европа/Лондон"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__europe/luxembourg
@@ -23477,7 +23542,7 @@ msgstr "Россия/Самара"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__europe/san_marino
 msgid "Europe/San_Marino"
-msgstr ""
+msgstr "Европа/Сан-Марино"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__europe/sarajevo
@@ -23522,7 +23587,7 @@ msgstr "Европа/Тирана"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__europe/tiraspol
 msgid "Europe/Tiraspol"
-msgstr ""
+msgstr "Европа/Тирасполь"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__europe/ulyanovsk
@@ -23867,7 +23932,7 @@ msgstr "Тип экспорта"
 #: model:ir.module.module,description:base.module_l10n_us_hr_payroll_adp
 #: model:ir.module.module,summary:base.module_l10n_us_hr_payroll_adp
 msgid "Export Work Entries to ADP"
-msgstr ""
+msgstr "Экспорт рабочих записей в ADP"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_hr_payroll_group_s
@@ -23913,7 +23978,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_ca_payment_cpa005
 msgid "Export payments as CPA 005 AFT files"
-msgstr ""
+msgstr "Экспорт платежей в формате CPA 005 AFT"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_nz_eft
@@ -23949,6 +24014,11 @@ msgstr "Выражение"
 #: model:ir.module.module,shortdesc:base.module_base_address_extended
 msgid "Extended Addresses"
 msgstr "Расширенные адреса"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_l10n_my_edi_extended
+msgid "Extended features for the E-invoicing using MyInvois"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_ui_view__mode__extension
@@ -24188,7 +24258,7 @@ msgstr "Поле \"%(field_name)s\" не существует в модели \"
 #. odoo-python
 #: code:addons/base/models/res_lang.py:0
 msgid "Field \"%s\" is not cached"
-msgstr ""
+msgstr "Поле «%s» не кэшировано"
 
 #. module: base
 #. odoo-python
@@ -24262,7 +24332,7 @@ msgstr "Выездное обслуживание - Подписка на про
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_industry_fsm_repair
 msgid "Field Service Repair"
-msgstr ""
+msgstr "Ремонт в сервисной службе"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_industry_fsm_report
@@ -24860,7 +24930,7 @@ msgstr "Франция - интеграция Factur-X с Chorus Pro"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fr
 msgid "France - Localizations"
-msgstr ""
+msgstr "Франция — Локализации"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fr_hr_payroll_account
@@ -24893,7 +24963,7 @@ msgstr "Французская Гвиана"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fr_intrastat
 msgid "French Intrastat Declaration"
-msgstr ""
+msgstr "Французская декларация Интрастат"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fr_hr_payroll
@@ -24993,7 +25063,7 @@ msgstr "GB"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__gb-eire
 msgid "GB-Eire"
-msgstr ""
+msgstr "Великобритания-Ирландия"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__gmt
@@ -25980,7 +26050,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.category,description:base.module_category_marketing_surveys
 msgid "Helps you manage your survey for review of different users."
-msgstr ""
+msgstr "Помогает управлять опросами для оценки различных пользователей."
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_sales_sign
@@ -26056,7 +26126,7 @@ msgstr "Гонконг — Бухгалтерия"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_hk_reports
 msgid "Hong Kong - Accounting Reports"
-msgstr ""
+msgstr "Гонконг — Бухгалтерские отчеты"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_hk_hr_payroll
@@ -26107,7 +26177,7 @@ msgstr "Продукт Hr Expense Predict"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_holidays_contract
 msgid "Hr Holidays Contract"
-msgstr ""
+msgstr "Договор на отпуска в HR"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_recruitment_extract
@@ -26757,6 +26827,11 @@ msgid "Import QIF Bank Statement"
 msgstr "Импорт банковской выписки в формате QIF"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_sale_shopee
+msgid "Import Shopee orders and sync deliveries"
+msgstr ""
+
+#. module: base
 #. odoo-python
 #: code:addons/base/models/res_partner.py:0
 msgid "Import Template for Customers"
@@ -26998,57 +27073,57 @@ msgstr "Индийская зарплата"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__indian/antananarivo
 msgid "Indian/Antananarivo"
-msgstr ""
+msgstr "Индийский/Антананариву"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__indian/chagos
 msgid "Indian/Chagos"
-msgstr ""
+msgstr "Индийский/Чагос"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__indian/christmas
 msgid "Indian/Christmas"
-msgstr ""
+msgstr "Индийский/Остров_Рождества"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__indian/cocos
 msgid "Indian/Cocos"
-msgstr ""
+msgstr "Индийский/Кокосовые_острова"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__indian/comoro
 msgid "Indian/Comoro"
-msgstr ""
+msgstr "Индийский/Коморские_острова"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__indian/kerguelen
 msgid "Indian/Kerguelen"
-msgstr ""
+msgstr "Индийский/Кергелен"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__indian/mahe
 msgid "Indian/Mahe"
-msgstr ""
+msgstr "Индийский/Маэ"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__indian/maldives
 msgid "Indian/Maldives"
-msgstr ""
+msgstr "Индийский/Мальдивы"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__indian/mauritius
 msgid "Indian/Mauritius"
-msgstr ""
+msgstr "Индийский/Маврикий"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__indian/mayotte
 msgid "Indian/Mayotte"
-msgstr ""
+msgstr "Индийский/Майотта"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__indian/reunion
 msgid "Indian/Reunion"
-msgstr ""
+msgstr "Индийский/Реюньон"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__company_type__person
@@ -27265,6 +27340,8 @@ msgid ""
 "Integrate features developped in Mail in use case involving resources "
 "instead of users"
 msgstr ""
+"Интеграция функций, разработанных в Mail, в сценарии использования с "
+"ресурсами вместо пользователей."
 
 #. module: base
 #: model:ir.module.module,description:base.module_sale_loyalty_delivery
@@ -27885,6 +27962,11 @@ msgid "Italy - Accounting Reports"
 msgstr "Италия — Бухгалтерские отчеты"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_it_riba
+msgid "Italy - Bank Receipts (Ri.Ba.)"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_it_edi_doi
 msgid "Italy - Declaration of Intent"
 msgstr "Италия — Декларация о намерениях"
@@ -28101,6 +28183,11 @@ msgid "Kenya - Payroll with Accounting"
 msgstr "Кения — Зарплата и учет в бухгалтерии"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ke_edi_oscu_pos
+msgid "Kenya - Point of Sale"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ke_edi_oscu_mrp
 msgid "Kenya ETIMS EDI Manufacturing Integration"
 msgstr "Кения — Интеграция ETIMS EDI для производства"
@@ -28242,7 +28329,7 @@ msgstr ""
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__kwajalein
 msgid "Kwajalein"
-msgstr ""
+msgstr "Кваджалейн"
 
 #. module: base
 #: model:res.currency,currency_unit_label:base.AOA
@@ -28608,7 +28695,7 @@ msgstr "Латвия — Бухгалтерия"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_lv_reports
 msgid "Latvia - Accounting Reports"
-msgstr ""
+msgstr "Латвия — Бухгалтерские отчеты"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.config_wizard_step_view_form
@@ -28897,6 +28984,11 @@ msgid "Link module between pos_hr and pos_restaurant"
 msgstr "Модуль связи между pos_hr и pos_restaurant"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_pos_restaurant_loyalty
+msgid "Link module between pos_restaurant and pos_loyalty"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,summary:base.module_l10n_be_pos_sale
 msgid "Link module between pos_sale and l10n_be"
 msgstr "Модуль связи между pos_sale и l10n_be"
@@ -29139,7 +29231,7 @@ msgstr "M - ПРОФЕССИОНАЛЬНАЯ, НАУЧНАЯ И ТЕХНИЧЕС
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__met
 msgid "MET"
-msgstr ""
+msgstr "MET"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_project_mrp_account
@@ -29215,12 +29307,12 @@ msgstr "Функции MRP для контроля качества с помо�
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__mst
 msgid "MST"
-msgstr ""
+msgstr "MST"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__mst7mdt
 msgid "MST7MDT"
-msgstr ""
+msgstr "MST7MDT"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_purchase_stock
@@ -29380,6 +29472,11 @@ msgstr "Малайзия — Бухгалтерские отчеты"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_my_edi
 msgid "Malaysia - E-invoicing"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_my_edi_extended
+msgid "Malaysia - E-invoicing Extended Features"
 msgstr ""
 
 #. module: base
@@ -30121,6 +30218,11 @@ msgid "Mexico - Payroll"
 msgstr "Мексика - Расчет заработной платы"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_mx_hr_payroll_localisation
+msgid "Mexico - Payroll - Localisation"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_mx_hr_payroll_account
 msgid "Mexico - Payroll with Accounting"
 msgstr "Мексика — Зарплата и учет в бухгалтерии"
@@ -30133,17 +30235,17 @@ msgstr "Отчет о пробном балансе за 13 месяц в Мек
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__mexico/bajanorte
 msgid "Mexico/BajaNorte"
-msgstr ""
+msgstr "Мексика/Баха-Норте"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__mexico/bajasur
 msgid "Mexico/BajaSur"
-msgstr ""
+msgstr "Мексика/Баха-Сур"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__mexico/general
 msgid "Mexico/General"
-msgstr ""
+msgstr "Мексика/Общее_время"
 
 #. module: base
 #: model:res.country,name:base.fm
@@ -30865,7 +30967,7 @@ msgstr ""
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__nz
 msgid "NZ"
-msgstr ""
+msgstr "NZ"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_nz_reports
@@ -30875,7 +30977,7 @@ msgstr ""
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__nz-chat
 msgid "NZ-CHAT"
-msgstr ""
+msgstr "NZ-CHAT"
 
 #. module: base
 #: model:res.currency,currency_unit_label:base.NGN
@@ -30977,7 +31079,7 @@ msgstr "Науру"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__navajo
 msgid "Navajo"
-msgstr ""
+msgstr "Навахо"
 
 #. module: base
 #: model:res.country,name:base.np
@@ -34186,6 +34288,11 @@ msgid "POS - HR"
 msgstr "POS - HR"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_pos_restaurant_loyalty
+msgid "POS - Restaurant Loyality"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_sms
 msgid "POS - SMS"
 msgstr ""
@@ -34258,7 +34365,7 @@ msgstr "POS-ценник"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_test_pos_qr_payment
 msgid "POS QR Tests"
-msgstr ""
+msgstr "Тесты QR для POS"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_razorpay
@@ -34358,12 +34465,12 @@ msgstr "Кошелек POS Viva"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__prc
 msgid "PRC"
-msgstr ""
+msgstr "PRC"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pst8pdt
 msgid "PST8PDT"
-msgstr ""
+msgstr "PST8PDT"
 
 #. module: base
 #: model:res.currency,currency_unit_label:base.TOP
@@ -34373,222 +34480,222 @@ msgstr ""
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/apia
 msgid "Pacific/Apia"
-msgstr ""
+msgstr "Тихоокеанский/Апиа"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/auckland
 msgid "Pacific/Auckland"
-msgstr ""
+msgstr "Тихоокеанский/Окленд"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/bougainville
 msgid "Pacific/Bougainville"
-msgstr ""
+msgstr "Тихоокеанский/Бугенвиль"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/chatham
 msgid "Pacific/Chatham"
-msgstr ""
+msgstr "Тихоокеанский/Чатем"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/chuuk
 msgid "Pacific/Chuuk"
-msgstr ""
+msgstr "Тихоокеанский/Чуук"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/easter
 msgid "Pacific/Easter"
-msgstr ""
+msgstr "Тихоокеанский/Остров_Пасхи"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/efate
 msgid "Pacific/Efate"
-msgstr ""
+msgstr "Тихоокеанский/Эфате"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/enderbury
 msgid "Pacific/Enderbury"
-msgstr ""
+msgstr "Тихоокеанский/Эндербери"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/fakaofo
 msgid "Pacific/Fakaofo"
-msgstr ""
+msgstr "Тихоокеанский/Факаофо"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/fiji
 msgid "Pacific/Fiji"
-msgstr ""
+msgstr "Тихоокеанский/Фиджи"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/funafuti
 msgid "Pacific/Funafuti"
-msgstr ""
+msgstr "Тихоокеанский/Фунафути"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/galapagos
 msgid "Pacific/Galapagos"
-msgstr ""
+msgstr "Тихоокеанский/Галапагосы"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/gambier
 msgid "Pacific/Gambier"
-msgstr ""
+msgstr "Тихоокеанский/Гамбье"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/guadalcanal
 msgid "Pacific/Guadalcanal"
-msgstr ""
+msgstr "Тихоокеанский/Гуадалканал"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/guam
 msgid "Pacific/Guam"
-msgstr ""
+msgstr "Тихоокеанский/Гуам"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/honolulu
 msgid "Pacific/Honolulu"
-msgstr ""
+msgstr "Тихоокеанский/Гонолулу"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/johnston
 msgid "Pacific/Johnston"
-msgstr ""
+msgstr "Тихоокеанский/Джонстон"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/kanton
 msgid "Pacific/Kanton"
-msgstr ""
+msgstr "Тихоокеанский/Кантон"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/kiritimati
 msgid "Pacific/Kiritimati"
-msgstr ""
+msgstr "Тихоокеанский/Киритимати"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/kosrae
 msgid "Pacific/Kosrae"
-msgstr ""
+msgstr "Тихоокеанский/Косраэ"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/kwajalein
 msgid "Pacific/Kwajalein"
-msgstr ""
+msgstr "Тихоокеанский/Кваджалейн"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/majuro
 msgid "Pacific/Majuro"
-msgstr ""
+msgstr "Тихоокеанский/Маджуро"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/marquesas
 msgid "Pacific/Marquesas"
-msgstr ""
+msgstr "Тихоокеанский/Маркизские_острова"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/midway
 msgid "Pacific/Midway"
-msgstr ""
+msgstr "Тихоокеанский/Мидуэй"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/nauru
 msgid "Pacific/Nauru"
-msgstr ""
+msgstr "Тихоокеанский/Науру"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/niue
 msgid "Pacific/Niue"
-msgstr ""
+msgstr "Тихоокеанский/Ниуэ"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/norfolk
 msgid "Pacific/Norfolk"
-msgstr ""
+msgstr "Тихоокеанский/Норфолк"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/noumea
 msgid "Pacific/Noumea"
-msgstr ""
+msgstr "Тихоокеанский/Нумеа"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/pago_pago
 msgid "Pacific/Pago_Pago"
-msgstr ""
+msgstr "Тихоокеанский/Паго-Паго"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/palau
 msgid "Pacific/Palau"
-msgstr ""
+msgstr "Тихоокеанский/Палау"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/pitcairn
 msgid "Pacific/Pitcairn"
-msgstr ""
+msgstr "Тихоокеанский/Питкэрн"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/pohnpei
 msgid "Pacific/Pohnpei"
-msgstr ""
+msgstr "Тихоокеанский/Понпеи"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/ponape
 msgid "Pacific/Ponape"
-msgstr ""
+msgstr "Тихоокеанский/Понапе"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/port_moresby
 msgid "Pacific/Port_Moresby"
-msgstr ""
+msgstr "Тихоокеанский/Порт-Морсби"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/rarotonga
 msgid "Pacific/Rarotonga"
-msgstr ""
+msgstr "Тихоокеанский/Раротонга"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/saipan
 msgid "Pacific/Saipan"
-msgstr ""
+msgstr "Тихоокеанский/Сайпан"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/samoa
 msgid "Pacific/Samoa"
-msgstr ""
+msgstr "Тихоокеанский/Самоа"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/tahiti
 msgid "Pacific/Tahiti"
-msgstr ""
+msgstr "Тихоокеанский/Таити"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/tarawa
 msgid "Pacific/Tarawa"
-msgstr ""
+msgstr "Тихоокеанский/Тарава"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/tongatapu
 msgid "Pacific/Tongatapu"
-msgstr ""
+msgstr "Тихоокеанский/Тонгатапу"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/truk
 msgid "Pacific/Truk"
-msgstr ""
+msgstr "Тихоокеанский/Трук"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/wake
 msgid "Pacific/Wake"
-msgstr ""
+msgstr "Тихоокеанский/Уэйк"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/wallis
 msgid "Pacific/Wallis"
-msgstr ""
+msgstr "Тихоокеанский/Уоллис"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__pacific/yap
 msgid "Pacific/Yap"
-msgstr ""
+msgstr "Тихоокеанский/Яп"
 
 #. module: base
 #. odoo-python
@@ -34908,7 +35015,7 @@ msgstr "Путь (или глобальный шаблон)"
 #: model:ir.model.fields,field_description:base.field_ir_actions_server__path
 #: model:ir.model.fields,field_description:base.field_ir_cron__path
 msgid "Path to show in the URL"
-msgstr ""
+msgstr "Путь для отображения в URL"
 
 #. module: base
 #. odoo-python
@@ -34921,6 +35028,8 @@ msgstr ""
 #: model:ir.model.constraint,message:base.constraint_ir_actions_path_unique
 msgid "Path to show in the URL must be unique! Please choose another one."
 msgstr ""
+"Путь, отображаемый в URL должен быть уникальным! Пожалуйста, выберите "
+"другой."
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_actions_server__update_path
@@ -35355,6 +35464,7 @@ msgstr "Дисплей для подготовки PoS Ресторан"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_accounting_localizations_point_of_sale
+#: model:ir.module.category,name:base.module_category_localization_point_of_sale
 #: model:ir.module.category,name:base.module_category_point_of_sale
 #: model:ir.module.category,name:base.module_category_sales_point_of_sale
 #: model:ir.module.module,shortdesc:base.module_point_of_sale
@@ -35369,6 +35479,11 @@ msgstr "Точка продаж - купоны и лояльность"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_urban_piper
 msgid "Point of Sale - UrbanPiper"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_pos_urban_piper_enhancements
+msgid "Point of Sale - UrbanPiper Enhancements"
 msgstr ""
 
 #. module: base
@@ -35658,12 +35773,12 @@ msgstr "Уведомления о наличии товара"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_product_barcodelookup
 msgid "Product Barcode Lookup"
-msgstr ""
+msgstr "Поиск товара по штрихкоду"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_product_barcodelookup
 msgid "Product Barcode Lookup for eCommerce"
-msgstr ""
+msgstr "Поиск товара по штрихкоду для eCommerce"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sale_comparison
@@ -35804,7 +35919,7 @@ msgstr "Проект - Продажа - Расходы"
 #: model:ir.module.module,shortdesc:base.module_project_enterprise_hr_skills
 #: model:ir.module.module,shortdesc:base.module_project_hr_skills
 msgid "Project - Skills"
-msgstr ""
+msgstr "Проект — Навыки"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_project_account_asset
@@ -36089,7 +36204,7 @@ msgstr "Подписки на продажу проектов"
 #: model:ir.module.module,summary:base.module_project_enterprise_hr_skills
 #: model:ir.module.module,summary:base.module_project_hr_skills
 msgid "Project skills"
-msgstr ""
+msgstr "Проектные навыки"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_helpdesk_fsm_sale
@@ -36596,12 +36711,12 @@ msgstr "РНК"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__roc
 msgid "ROC"
-msgstr ""
+msgstr "ROC"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__rok
 msgid "ROK"
-msgstr ""
+msgstr "ROK"
 
 #. module: base
 #: model:res.country,vat_label:base.hn
@@ -36609,7 +36724,8 @@ msgid "RTN"
 msgstr "RTN"
 
 #. module: base
-#: model:res.country,vat_label:base.ec model:res.country,vat_label:base.pe
+#: model:res.country,vat_label:base.ec model:res.country,vat_label:base.pa
+#: model:res.country,vat_label:base.pe
 msgid "RUC"
 msgstr "RUC"
 
@@ -37177,7 +37293,7 @@ msgstr "Номер ресурса"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_resource_mail
 msgid "Resource Mail"
-msgstr ""
+msgstr "Почтовый ресурс"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_attachment__res_model
@@ -37623,6 +37739,11 @@ msgid "Salary Configurator (Belgium)"
 msgstr "Конфигуратор заработной платы (Бельгия)"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_be_hr_contract_salary_mobility_budget
+msgid "Salary Configurator (Belgium) - Mobility Budget"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_contract_salary_holidays
 msgid "Salary Configurator - Holidays"
 msgstr "Конфигуратор зарплаты - Праздники"
@@ -37634,6 +37755,7 @@ msgstr "Конфигуратор заработной платы - Расчет 
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_be_hr_contract_salary
+#: model:ir.module.module,summary:base.module_l10n_be_hr_contract_salary_mobility_budget
 msgid "Salary Package Configurator"
 msgstr "Конфигуратор зарплатных пакетов"
 
@@ -37641,6 +37763,11 @@ msgstr "Конфигуратор зарплатных пакетов"
 #: model:ir.module.category,name:base.module_category_accounting_localizations_sale
 msgid "Sale"
 msgstr "Продажа"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_test_sale_purchase_edi_ubl
+msgid "Sale & Purchase Order EDI Tests: Ensure Flow Robustness"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_sms
@@ -38414,8 +38541,11 @@ msgstr "Отправляйте грузы через UPS и отслеживай
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_usps
-msgid "Send your shippings through USPS and track them online"
-msgstr "Отправляйте свои грузы через USPS и отслеживайте их в режиме онлайн"
+msgid ""
+"This is the legacy integration with USPS. Please install the new \"United "
+"States Postal Service (USPS) Shipping\" module and uninstall this one as "
+"soon as possible."
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_survey
@@ -38729,6 +38859,11 @@ msgstr "Судоходство"
 #: model:ir.module.module,shortdesc:base.module_website_sale_shiprocket
 msgid "Shiprocket: Cash on Delivery"
 msgstr "Shiprocket: Наложенный платеж"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_sale_shopee
+msgid "Shopee Connector"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sale_wishlist
@@ -39583,7 +39718,7 @@ msgstr "Учет запасов"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_stock_barcode_barcodelookup
 msgid "Stock Barcode - Barcode Lookup"
-msgstr ""
+msgstr "Склад — Поиск по штрихкоду"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_stock_intrastat
@@ -40194,7 +40329,7 @@ msgstr "Название шаблона"
 #. odoo-python
 #: code:addons/base/models/assetsbundle.py:0
 msgid "Template name is missing."
-msgstr ""
+msgstr "Имя шаблона отсутствует."
 
 #. module: base
 #: model:res.currency,currency_subunit_label:base.TMT
@@ -40222,6 +40357,11 @@ msgstr ""
 #: model:ir.module.module,shortdesc:base.module_test_resource
 msgid "Test - Resource"
 msgstr "Тест - Ресурс"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_test_sale_purchase_edi_ubl
+msgid "Test - Sale & Purchase Order EDI"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_html_field_history
@@ -41713,6 +41853,14 @@ msgstr ""
 "test_mail. "
 
 #. module: base
+#: model:ir.module.module,description:base.module_test_sale_purchase_edi_ubl
+msgid ""
+"This module contains tests related to sale and purchase order edi.\n"
+"    Ensure export and import of order working properly and filling details properly from\n"
+"    order XML file."
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_test_spreadsheet_edition
 msgid ""
 "This module contains tests related to spreadsheet edition.\n"
@@ -42398,16 +42546,6 @@ msgid "Turkey"
 msgstr "Турция"
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera
-msgid "Türkiye - Nilvera"
-msgstr "Турция — Nilvera"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera_einvoice
-msgid "Türkiye - Nilvera E-Invoice"
-msgstr "Турция — Nilvera электронный счет"
-
-#. module: base
 #: model:res.country,name:base.tm
 msgid "Turkmenistan"
 msgstr "Туркменистан"
@@ -42514,6 +42652,16 @@ msgstr "Турция — Бухгалтерия"
 #: model:ir.module.module,shortdesc:base.module_l10n_tr_reports
 msgid "Türkiye - Accounting Reports"
 msgstr "Турция — Бухгалтерские отчеты"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera
+msgid "Türkiye - Nilvera"
+msgstr "Турция — Nilvera"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera_einvoice
+msgid "Türkiye - Nilvera E-Invoice"
+msgstr "Турция — Nilvera электронный счет"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_tr_hr_payroll
@@ -42925,8 +43073,8 @@ msgstr "Соединенные Штаты - Расчет заработной п
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_delivery_usps
-msgid "United States Postal Service (USPS) Shipping"
-msgstr "Почтовая служба США (USPS) Доставка"
+msgid "United States Postal Service (USPS) Shipping (Legacy)"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_uom
@@ -45409,12 +45557,6 @@ msgstr "l10n_be_pos_sale"
 #: model:ir.model.fields.selection,name:base.selection__ir_model_fields__ttype__many2many
 msgid "many2many"
 msgstr "many2many"
-
-#. module: base
-#. odoo-python
-#: code:addons/base/models/ir_actions.py:0
-msgid "many2many fields cannot be evaluated by reference"
-msgstr "поля many2many не могут быть оценены по ссылке"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_model_fields__ttype__many2one
